@@ -52,5 +52,12 @@ function get(id)
     if tuple == nil then
         return nil
     end
-    return {tuple.id, tuple.name, tuple.age}
+
+    local res = {
+        id = tuple.id,
+        bucket_id = tuple.bucket_id,
+        name = tuple.name,
+        age = tuple.age
+    }
+    return res
 end

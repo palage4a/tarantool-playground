@@ -14,16 +14,6 @@ etcd \
 
 ### Setup etcd
 
-```shell
-etcdctl user add root:secret
-etcdctl user grant-role root root
-etcdctl role add config_manager
-etcdctl role grant-permission config_manager --prefix=true readwrite /etcd-config/app
-etcdctl user add manager:password
-etcdctl user grant-role manager config_manager
-etcdctl auth enable
-```
-
 ### Publish configuration into etcd
 
 ```shell

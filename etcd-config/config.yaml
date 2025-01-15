@@ -3,8 +3,6 @@ config:
     endpoints:
     - http://localhost:2379
     prefix: /etcd-config/app
-    username: manager
-    password: 'password'
     http:
       request:
         timeout: 3
